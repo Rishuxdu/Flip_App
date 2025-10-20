@@ -2,7 +2,7 @@
 import { useState,useEffect } from "react";
 import { Routes, Route , useNavigate} from "react-router-dom"
 import SideBar from './SideBar';
-import CardCom from "./cardCom";
+import CardCom from "./CardCom";
 import NavBar from './NavBar';
 import Signup from "./Signup";
 import Login from "./Login";
