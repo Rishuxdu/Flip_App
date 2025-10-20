@@ -18,7 +18,7 @@ export default function SideBar({ onselectSubject }) {
   const AddSubject = () => {
     const newSubjectArray = { name: name };
 const token = localStorage.getItem("token")
-    fetch("http://localhost:3000/subjects", {
+    fetch("https://flip-app.onrender.com/subjects", {
       method: "POST",
       headers: { "content-type": "application/json" ,
         "Authorization": `Bearer ${token}`
@@ -41,7 +41,7 @@ const token = localStorage.getItem("token")
   const token = localStorage.getItem("token");
 
   try {
-    const res = await fetch(`http://localhost:3000/subjects/${id}`, {
+    const res = await fetch(`https://flip-app.onrender.com/subjects/${id}`, {
       method: "DELETE",
       headers: {
         "Authorization": `Bearer ${token}`,
@@ -73,7 +73,7 @@ const token = localStorage.getItem("token")
       async function tofetch() {
         const token = localStorage.getItem("token")
         try {
-          const response = await fetch("http://localhost:3000/subjects",{
+          const response = await fetch("https://flip-app.onrender.com/subjects",{
             method:"GET",
             headers:{"Authorization": `Bearer ${token}`}
           });

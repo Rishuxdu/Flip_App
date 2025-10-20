@@ -22,9 +22,9 @@ export default function CardCom({subjectId}) {
 
 let url;
 if (subjectId && subjectId !== "") {
-  url = `http://localhost:3000/cards/${subjectId}`;
+  url = `https://flip-app.onrender.com/cards/${subjectId}`;
 } else {
-  url = `http://localhost:3000/cards/default`;
+  url = `https://flip-app.onrender.com/cards/default`;
 }
 
 
@@ -47,7 +47,7 @@ if (subjectId && subjectId !== "") {
     const token = localStorage.getItem("token")
     if(!subjectId) return;
     const newCard = { question: question, answer: answer};
-    const response = await fetch(`http://localhost:3000/cards/${subjectId}`, {
+    const response = await fetch(`https://flip-app.onrender.com/cards/${subjectId}`, {
       method: "post",
       headers: { "content-type": "application/json",
         "Authorization": `Bearer ${token}`},
@@ -171,7 +171,7 @@ if (subjectId && subjectId !== "") {
     const token = localStorage.getItem("token")
     const confirmDelete = window.confirm("Are you sure you want to delete this card?");
     if (!confirmDelete) return;
-    await fetch(`http://localhost:3000/cards/${id}`,{
+    await fetch(`https://flip-app.onrender.com/cards/${id}`,{
      method:"DELETE",
      headers:{"Authorization": `Bearer ${token}`}
     })

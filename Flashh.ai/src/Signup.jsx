@@ -12,7 +12,7 @@ const [message,setMessage]=useState("")
     
 const handleSignup= async ()=>{
     
-    const response= await fetch("http://localhost:3000/signup",{
+    const response= await fetch("https://flip-app.onrender.com/signup",{
 method:"POST",
 headers: { "Content-Type": "application/json"
     
