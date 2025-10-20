@@ -291,7 +291,8 @@ whileTap={{ scale: 0.99 }}
          {renderForm()}
        </AnimatePresence>
 
-       <div className="flex justify-center w-full mt-4 md:mt-0 md:w-auto md:absolute md:top-4 md:right-4">
+       {/* Add Card Button */}
+<div className="w-full flex justify-center mt-4 md:mt-0 md:justify-end">
   <button
     onClick={formToggler}
     className="p-2 bg-violet-500 text-white rounded-full shadow-md"
@@ -315,6 +316,7 @@ whileTap={{ scale: 0.99 }}
     </svg>
   </button>
 </div>
+
 
       </div>
     </>
