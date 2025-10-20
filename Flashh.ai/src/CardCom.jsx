@@ -167,7 +167,9 @@ if (subjectId && subjectId !== "") {
     setFlip((prev) => !prev);
   };
   const deleteCard=async(id)=>{
-    if (card?.isDefault) return
+    const cardToDelete = data.find((c) => c._id === id);
+    if (cardToDelete?.isDefault) return;
+
     const token = localStorage.getItem("token")
     const confirmDelete = window.confirm("Are you sure you want to delete this card?");
     if (!confirmDelete) return;
