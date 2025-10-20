@@ -1,0 +1,8 @@
+# Frontend
+Flashh.ai/node_modules
+
+# Backend
+flashBackend/.env
+
+# General
+.DS_Store
