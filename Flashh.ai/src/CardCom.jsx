@@ -200,7 +200,7 @@ if (subjectId && subjectId !== "") {
   className="absolute  mt-100 mr-60 md:relative md:mt-5 md:mr-10"
 >
 
-          <svg class="w-[40px] h-[40px] text-purple-800 " aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m15 19-7-7 7-7"/></svg>
+          <svg class="w-[40px] h-[40px] text-purple-500 " aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m15 19-7-7 7-7"/></svg>
         </button>
 
         <AnimatePresence mode="wait">
@@ -293,14 +293,14 @@ whileTap={{ scale: 0.99 }}
   className="absolute mt-97 ml-45 md:relative md:mt-0 md:ml-0"
 >
 
-          <svg class="w-[40px] h-[40px] text-purple-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m9 9 7 7-7 7"/></svg>
+          <svg class="w-[40px] h-[40px] text-purple-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m9 9 7 7-7 7"/></svg>
         </button>
 
        <AnimatePresence>
          {renderForm()}
        </AnimatePresence>
 
-        <button onClick={formToggler} className="absolute mt-97 mr-10 md:static md:self-center md:mt-4"><svg className="w-6 h-6 text-purple-800 dark:text-white " aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 12h14m-7 7V5"/></svg></button>
+        <button onClick={formToggler} className="absolute mt-97 mr-10 md:static md:self-center md:mt-4"><svg className="w-6 h-6 text-black " aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" d="M5 12h14m-7 7V5"/></svg></button>
 
       </div>
     </>
